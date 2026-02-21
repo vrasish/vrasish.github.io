@@ -9,8 +9,8 @@
 body {
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
-    color: white;
+    background: linear-gradient(135deg, #87CEEB 0%, #B0E0E6 50%, #ADD8E6 100%);
+    color: #1a1a1a;
     text-align: center;
     min-height: 100vh;
 }
@@ -23,35 +23,37 @@ body {
 
 h1 {
     font-size: 42px;
-    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
     margin-bottom: 10px;
+    color: #1a1a1a;
 }
 
 h2 {
-    color: #ffd700;
-    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
+    color: #0066cc;
+    text-shadow: 1px 1px 2px rgba(255,255,255,0.5);
 }
 
 .subtitle {
-    color: #ffd700;
+    color: #0066cc;
     margin-bottom: 30px;
     font-size: 18px;
     font-weight: 500;
 }
 
 .section {
-    background: rgba(255,255,255,0.15);
+    background: rgba(255,255,255,0.7);
     backdrop-filter: blur(10px);
     padding: 25px;
     border-radius: 16px;
     margin: 20px 0;
-    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.2);
+    box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+    border: 1px solid rgba(255,255,255,0.5);
 }
 
 .section p {
     line-height: 1.8;
     text-align: left;
+    color: #1a1a1a;
 }
 
 .apps {
@@ -63,22 +65,32 @@ h2 {
 }
 
 .app-card {
-    width: 220px;
-    padding: 20px;
+    width: 300px;
+    padding: 30px;
     border-radius: 16px;
-    background: rgba(255,255,255,0.2);
+    background: rgba(255,255,255,0.8);
     backdrop-filter: blur(10px);
     text-decoration: none;
-    color: white;
+    color: #1a1a1a;
     transition: 0.3s;
-    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
-    border: 1px solid rgba(255,255,255,0.3);
+    box-shadow: 0 4px 16px rgba(0,0,0,0.15);
+    border: 2px solid rgba(0,102,204,0.3);
+}
+
+.app-card h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.app-card p {
+    font-size: 16px;
 }
 
 .app-card:hover {
-    transform: translateY(-8px);
-    background: rgba(255,255,255,0.3);
-    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
+    transform: translateY(-8px) scale(1.02);
+    background: rgba(255,255,255,0.95);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+    border-color: rgba(0,102,204,0.5);
 }
 
 .math { border: 2px solid #4ade80; }
@@ -86,7 +98,7 @@ h2 {
 .paw { border: 2px solid #f472b6; }
 
 .contact-email {
-    color: #ffd700;
+    color: #0066cc;
     font-size: 18px;
     font-weight: 500;
     text-decoration: none;
@@ -94,13 +106,13 @@ h2 {
 }
 
 .contact-email:hover {
-    color: #fff;
-    text-shadow: 0 0 10px rgba(255,215,0,0.5);
+    color: #004499;
+    text-decoration: underline;
 }
 
 footer {
     margin-top: 40px;
-    color: rgba(255,255,255,0.8);
+    color: #1a1a1a;
     font-size: 14px;
 }
 </style>
