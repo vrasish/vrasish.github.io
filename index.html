@@ -1,61 +1,114 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-  <title>Vaishnavi Renduchintala</title>
-  <style>
-    body {
-      margin:0;
-      font-family:Arial, sans-serif;
-      background:#0d1117;
-      color:white;
-      text-align:center;
-    }
-    header{
-      padding:80px 20px;
-    }
-    h1{
-      font-size:48px;
-      margin-bottom:10px;
-    }
-    h2{
-      font-weight:normal;
-      color:#58a6ff;
-    }
-    section{
-      padding:40px 20px;
-    }
-    .card{
-      background:#161b22;
-      margin:20px auto;
-      padding:20px;
-      width:80%;
-      border-radius:10px;
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Vaishnavi Portfolio</title>
+
+<style>
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    color: white;
+    text-align: center;
+}
+
+.container {
+    max-width: 900px;
+    margin: auto;
+    padding: 40px 20px;
+}
+
+h1 {
+    font-size: 42px;
+}
+
+.subtitle {
+    color: #60a5fa;
+    margin-bottom: 30px;
+}
+
+.section {
+    background: rgba(255,255,255,0.05);
+    padding: 20px;
+    border-radius: 12px;
+    margin: 20px 0;
+}
+
+.apps {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 20px;
+}
+
+.app-card {
+    width: 220px;
+    padding: 20px;
+    border-radius: 12px;
+    background: rgba(255,255,255,0.08);
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.app-card:hover {
+    transform: translateY(-6px);
+    background: rgba(255,255,255,0.15);
+}
+
+.math { border: 2px solid #22c55e; }
+.planner { border: 2px solid #3b82f6; }
+
+footer {
+    margin-top: 40px;
+    color: #aaa;
+}
+</style>
 </head>
+
 <body>
 
-<header>
-  <h1>Hi, I'm Vaishnavi 👋</h1>
-  <h2>AI • Innovation • Coding • Research</h2>
-</header>
+<div class="container">
 
-<section>
-  <div class="card">
-    <h3>About Me</h3>
-    <p>I build AI-powered tools, educational platforms, and real-world impact projects.</p>
-  </div>
+<h1>Hi, I'm Vaishnavi 👋</h1>
+<p class="subtitle">AI • Innovation • Coding • Research</p>
 
-  <div class="card">
-    <h3>Projects</h3>
-    <p>CookLook • SmartPlanner • CHD Risk Calculator • Teaching Initiative</p>
-  </div>
+<div class="section">
+<h2>About Me</h2>
+<p>I build AI-powered tools, educational apps, and real-world impact platforms.</p>
+</div>
 
-  <div class="card">
-    <h3>Contact</h3>
-    <p>More coming soon.</p>
-  </div>
-</section>
+<div class="section">
+<h2>My Apps</h2>
+
+<div class="apps">
+
+<a href="https://math.vaishnavir.me" target="_blank" class="app-card math">
+<h3>🧮 Math Learning App</h3>
+<p>Counting, addition, subtraction & more</p>
+</a>
+
+<a href="https://planner.vaishnavir.me" target="_blank" class="app-card planner">
+<h3>📅 Smart Planner</h3>
+<p>Student productivity planner</p>
+</a>
+
+</div>
+</div>
+
+<div class="section">
+<h2>Contact</h2>
+<p>More coming soon.</p>
+</div>
+
+<footer>
+© 2026 Vaishnavi
+</footer>
+
+</div>
 
 </body>
 </html>
