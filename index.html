@@ -8,10 +8,11 @@
 <style>
 body {
     margin: 0;
-    font-family: Arial, sans-serif;
-    background: linear-gradient(to bottom, #0f172a, #1e293b);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 50%, #f093fb 100%);
     color: white;
     text-align: center;
+    min-height: 100vh;
 }
 
 .container {
@@ -22,18 +23,35 @@ body {
 
 h1 {
     font-size: 42px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #ffd700;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.3);
 }
 
 .subtitle {
-    color: #60a5fa;
+    color: #ffd700;
     margin-bottom: 30px;
+    font-size: 18px;
+    font-weight: 500;
 }
 
 .section {
-    background: rgba(255,255,255,0.05);
-    padding: 20px;
-    border-radius: 12px;
+    background: rgba(255,255,255,0.15);
+    backdrop-filter: blur(10px);
+    padding: 25px;
+    border-radius: 16px;
     margin: 20px 0;
+    box-shadow: 0 8px 32px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+.section p {
+    line-height: 1.8;
+    text-align: left;
 }
 
 .apps {
@@ -47,24 +65,43 @@ h1 {
 .app-card {
     width: 220px;
     padding: 20px;
-    border-radius: 12px;
-    background: rgba(255,255,255,0.08);
+    border-radius: 16px;
+    background: rgba(255,255,255,0.2);
+    backdrop-filter: blur(10px);
     text-decoration: none;
     color: white;
     transition: 0.3s;
+    box-shadow: 0 4px 16px rgba(0,0,0,0.2);
+    border: 1px solid rgba(255,255,255,0.3);
 }
 
 .app-card:hover {
-    transform: translateY(-6px);
-    background: rgba(255,255,255,0.15);
+    transform: translateY(-8px);
+    background: rgba(255,255,255,0.3);
+    box-shadow: 0 8px 24px rgba(0,0,0,0.3);
 }
 
-.math { border: 2px solid #22c55e; }
-.planner { border: 2px solid #3b82f6; }
+.math { border: 2px solid #4ade80; }
+.planner { border: 2px solid #60a5fa; }
+.paw { border: 2px solid #f472b6; }
+
+.contact-email {
+    color: #ffd700;
+    font-size: 18px;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.contact-email:hover {
+    color: #fff;
+    text-shadow: 0 0 10px rgba(255,215,0,0.5);
+}
 
 footer {
     margin-top: 40px;
-    color: #aaa;
+    color: rgba(255,255,255,0.8);
+    font-size: 14px;
 }
 </style>
 </head>
@@ -101,7 +138,7 @@ footer {
 
 <div class="section">
 <h2>Contact</h2>
-<p>More coming soon.</p>
+<p>Email: <a href="mailto:andamindolam@gmail.com" class="contact-email">andamindolam@gmail.com</a></p>
 </div>
 
 <footer>
